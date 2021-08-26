@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi NFA </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--Thu vien -->
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="http://cpettitt.github.io/project/dagre-d3/latest/dagre-d3.js"></script>
+		<link rel="stylesheet" href="./css/Automata.css">
+		<link rel="stylesheet" href="./css/NFA.css">
+</head>
+<body>
+    <div class="all ">
+        <div class="row">
+                <div class="well">
+                    <h1>
+                        Chuyển đổi Automat hữu hạn đơn định
+                    </h1>
+                </div>
+                <div class="well2">
+                    <h2>VD :</h2>
+                    <ul>
+                        <li>(a|b)*abb</li>
+                        <li>(a|b)*a</li>
+                        <li>(c|d)b|(a|b)*a(e|f)</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label for="input_regex" class="col-md-1 control-label">NHẬP </label>
+                <div class="col-md-11">
+                    <input type="text" class="form-control" id="input_regex" placeholder="(a|b)*abb">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <button id="button_convert" class="btn">GO</button>
+        </div>
+        <div class="row">
+            <div class="col">
+                <svg id="svg" >
+                    <g></g>
+                </svg>
+            </div>
+        </div>
+        </div>
+            <!-- Khai báo  javascript -->
+                <script src="./js/Lexical.js"></script>
+                <script src="./js/Automata.js"></script>
+                <script src="./js/RegexNFA.js"></script>
+
+</body>
+</html>

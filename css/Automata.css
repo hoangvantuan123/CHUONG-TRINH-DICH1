@@ -1,0 +1,13 @@
+.edgePath path {
+    stroke: rgb(66, 73, 67); /* Arrow color */
+    fill: rgb(228, 122, 122); /* Arrow Tip color */
+    stroke-width: 1.5px;
+}
+foreignobject { /* màu chữ số */
+    color: rgb(20, 20, 20);
+}
+.node ellipse, /* hiện start*/
+.node polygon {
+  stroke: rgb(194, 53, 53);
+}
+
